@@ -4,26 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcf4844e-0df2-49c4-b3c1-2951a362e49a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_OOP_HW4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TaskList.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DeadlineComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DeleteTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PriorityComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReaderFromCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ReaderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TaskPriority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WriteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WriteToCSV.java" afterDir="false" />
+    <list default="true" id="fcf4844e-0df2-49c4-b3c1-2951a362e49a" name="Changes" comment="ДЗ №4">
+      <change afterPath="$PROJECT_DIR$/src/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Calendar.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeadlineComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeleteTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PriorityComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReaderFromCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderFromCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReaderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReaderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaskList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteToCSV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +60,20 @@
       <option name="presentableId" value="Default" />
       <updated>1677262691118</updated>
     </task>
+    <task id="LOCAL-00001" summary="HW4">
+      <created>1677333399620</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677333399620</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="HW4" />
+    <MESSAGE value="ДЗ №4" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ №4" />
   </component>
 </project>

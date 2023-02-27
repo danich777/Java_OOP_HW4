@@ -1,5 +1,4 @@
 
-import java.io.File;
 import java.util.Scanner;
 
 public class Main {
@@ -7,50 +6,38 @@ public class Main {
 
     public static String getValue() {
         System.out.println(
-                "1-предыдущая задача\n2-следующая задача\n3-Добавить задачу\n4-Удалить задачу\n5-update tasks list deadline\n" +
-                        "6-прочитать список задач из файла\n7-записать список задач в файл\n8-вывести на экран список задач");
+                "1-Добавить задачу\n" +
+                        "2-Удалить задачу\n" +
+                        "3-прочитать список задач из файла\n" +
+                        "4-записать список задач в файл\n" +
+                        "5-вывести на экран список задач");
         System.out.print("Ваш выбор?: ");
         return sc.next();
     }
     public static void main(String[] args) {
-        int currentTask = 0;
+//        int currentTask = 0;
         while (true) {
-            if (TaskList.getTasks().size() > 0) {
-               Task.print(TaskList.getTaskById());
-            }
+//            if (Calendar.getTasks().size() > 0) {
+//               Task.print(Calendar.getTasks().get(currentTask));
+//            }
             switch (getValue()) {
+
                 case ("1"):
-                    currentTask--;
-                    if (currentTask < 0) {
-                        currentTask = TaskList.getTasks().size() - 1;
-                    }
+                    AddTask.addTask();
+//                    currentTask = 0;
                     break;
                 case ("2"):
-                    currentTask++;
-                    if (currentTask > TaskList.getTasks().size() - 1) {
-                        currentTask = 0;
-                    }
+                    Calendar.deleteTask();
+//                    currentTask = 0;
                     break;
                 case ("3"):
-                    AddTask.addTask();
-                    currentTask = 0;
-                    break;
-                case ("4"):
-                    DeleteTask.deleteTask();
-                    currentTask = 0;
-                    break;
-                case ("5"):
-                    TaskList.updateByDeadline();
-                    currentTask = 0;
-                    break;
-                case ("6"):
                     ReaderService.getChoice();
                     break;
-                case ("7"):
-                    WriteService.getChoice();
+                case ("4"):
+                    WriteService.WriteToCSV();
                     break;
-                case ("8"):
-                    for (Task task:TaskList.getTasks()) {
+                case ("5"):
+                    for (Task task: Calendar.getTasks()) {
                         Task.print(task);
                     }
                     break;

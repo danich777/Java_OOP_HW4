@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Scanner;
 
 public class ReaderFromCSV {
@@ -18,13 +17,12 @@ public class ReaderFromCSV {
                 if (!str.equals("\n")) {
                     String[] stringArray = str.split(";");
                     LocalDate createDate = LocalDate.parse(stringArray[0]);
-                    LocalTime createTime = LocalTime.parse(stringArray[1]);
-                    LocalDate deadline = LocalDate.parse(stringArray[2]);
-                    String author = stringArray[3];
-                    String description = stringArray[4];
-                    String priority = stringArray[5];
+                    LocalDate deadline = LocalDate.parse(stringArray[1]);
+                    String author = stringArray[2];
+                    String description = stringArray[3];
+                    String priority = stringArray[4];
                     TaskPriority taskPriority = TaskPriority.valueOf(priority);
-                    TaskList.add(new Task(createDate,
+                    Calendar.add(new Task(createDate,
                             deadline,
                             author,
                             description,

@@ -6,9 +6,9 @@ import java.io.IOException;
 public class WriteToCSV {
     public WriteToCSV(File file) {
 
-        try (FileWriter fr = new FileWriter(file, false);) {
+        try (FileWriter fr = new FileWriter(file, false)) {
             StringBuilder strBuilder = new StringBuilder();
-            for (Task task : TaskList.getTasks()) {
+            for (Task task : Calendar.getTasks()) {
                 strBuilder.append(task.getCreateDate());
                 strBuilder.append(";");
                 strBuilder.append(task.getDeadline());
@@ -22,7 +22,7 @@ public class WriteToCSV {
             }
             fr.append(strBuilder.toString());
         } catch (IOException e) {
-            System.out.printf("Write ERROR! %s", e);
+            System.out.printf("Ошибка записи! %s", e);
         }
     }
 
